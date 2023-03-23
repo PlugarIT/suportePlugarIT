@@ -1,0 +1,253 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">	
+	<head>
+		<meta property="fb:admins" content="591985244"/>
+		<title>Pesquisa Phoenix</title>
+		<link href="C:\css\style.css" rel="stylesheet" type="text/css" media="screen" />
+		<link type="text/css" rel="stylesheet" href="C:\css\shCore.css"/>
+		<link type="text/css" rel="stylesheet" href="C:\css\shThemeDefault.css"/>
+		<script type="text/javascript" src="C:\css\mootools-1.2.1-full.js"></script>
+	    <script type="text/javascript" src="C:\css\mootools-1.2.1-plugin.js"></script>   
+		<script type="text/javascript" src="C:\css\funcs.js"></script>
+		<meta name="google-site-verification" content="-qensH5_gji_6C91Q4sVjyqkyD-F-BPims6luRmnGos" />
+		<link rel="shortcut icon" href="favicon.ico">		
+	</head>
+	<script type="text/javascript">
+	//when the dom is ready
+	window.addEvent('domready', function() {
+
+		var customTipsB = $$('.tips');
+		var toolTipsB = new Tips(customTipsB, {
+		    className: 'tip'
+		});
+
+			
+	});
+
+	SyntaxHighlighter.config.clipboardSwf = 'http://codigopronto.com.br/includes/js/syntaxhighlighter_2.1.364/scripts/clipboard.swf';
+	SyntaxHighlighter.config.tagName = 'textarea';
+	SyntaxHighlighter.all();	
+</script>
+<body>
+<img src="C:\css\Cabecalho.jpg">
+<div id="wrapper">
+ <div id="header">
+  <div id="menu_lateral">
+	<div id="rodape">
+	<style>
+/*Link não visitado */
+a:link {
+  color: LightSlateGray;
+  text-decoration: none;
+}
+
+/*Link já visitado*/
+a:visited {
+  color: RoyalBlue;
+  text-decoration: none;
+}
+
+/*Quando o mouse passa por cima*/
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+/*Link ativo/selecionado*/
+a:active {
+  color: yellow;
+  text-decoration: none;
+}
+</style>
+		<div id="aviso">
+		<p></p>
+<p style="color: Dodgerblue">Conversão Folhamatic PostGres</p>
+    	</div>
+	<p></p>
+	<a href="Pesquisa4.0.html"><p style="color: blue">Volta para pagina inicial</a>
+	<a href="Conversao.html"><p style="color: blue">Volta para Conversões</a></p></p>
+	<a href="Manuais.html"><p style="color: blue">Volta para Manuais</a></p>
+	<hr>
+<p></p>
+		</div>
+	</div>
+<p></p>
+<a name="FolhamaticDBF.html"></a>
+ <span style='font-size:10.0pt;color:#548DD4;mso-themecolor:text2;mso-themetint:153'>Conversao de dados Folhamatic Postgres SQL
+  <a href="FolhamaticDBF.html" class="wiki-anchor"><o:p></o:p></span>
+</b></p>
+   <a href="FolhamaticDBF.html" class="wiki-anchor"></a><P></P>
+	<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\MarcaPostG.jpg" alt "h " align="middle">
+	</center>
+	</p><P></P>
+<hr>
+    <p style="color: black">Para conversão de dados da Folhamatic SQL é obrigatório que o <b>Postgres SQL</b> esteja instalado na máquina de conversão nas versões 10 - 9.2</a></p><P></P>
+<hr>
+    <p style="color: black">Precisamos do backup das pastas conforme descritas abaixo.</a></p><P></P>
+	 <p style="color: red">Para saber como faz o backup Folhamatic clique no link abaixo.</b></a></p>
+	  <p style="color: red"><a href="BackupFolPostg.html">Clique aqui para SABER COMO FAZ O BACKUP FOLHAMATIC POSTGRE SQL.</a><a></span></p><P></P><P></P><P></P>
+<hr>
+	<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\FolPostgres.jpg" alt "h " align="middle">
+	</center>
+	</p>
+<hr><P></P>
+    <p style="color: black">Iniciando conversão Folhamatic Postgres SQL</p><P></P>
+<hr>
+<ul>
+    <li><p style="color: black">Copie as duas pastas para a pasta E:\Bases\Folhamatic\SQL na máquina de conversão \\Contspcnv01 ou \\Contspcnv02.</a></p></li>
+	<li><p style="color: black">Descompacte a pasta compactada (Backup_Folhaxxxxxxx.zip</a></p></li>
+    <li><p style="color: black">Crie uma pasta com o código e apelido do cliente, esse será o nome do Database a ser criado</a></p></li>
+</ul>	
+    <p style="color: blue">Execute o Postgres SQL para criar o DataBase do backup</b>.</a></p>
+<ul>
+    <li><p style="color: black"><b>Dica:</b> No arquivo de Backup SQL vem a versão do Postgres</b>.</a></p></li>
+</ul>
+    <p style="color: black">Para criarmos o DataBase selecione no Postgres a verão ao qual será criado o DataBase </b>.</a></p> 
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\Postgres1.jpg" alt "h " align="middle">
+	</center>
+</p><P></P>
+	<p style="color: black">Clique no botão Direito no item Database e em seguida em <b>New Database.</b></a></p><P></P>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\Postgres2.jpg" alt "h " align="middle">
+	</center>
+</p>
+	<p style="color: black">Digite o nome do Database e clique em ok.</b></a></p>	      <P></P>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\Postgres3.jpg" alt "h " align="middle">
+	</center>
+</p>
+<hr>
+	<p style="color: black">Após criar o Database entre na pasta Conversao VC que esta na aréa de trabalho e execute o <b>RestorePostgresFolhamatic.exe.</b></a></p><P></P>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\RestorePostegre.jpg" alt "h " align="middle">
+	</center>
+</p>
+	<p style="color: black">No Restore digitaremos os seguintes campos.</b></a></p><P></P>
+<ul>
+	    <li><p style="color: black"><b>Pasta Bin PG:</b> O local do Database.(Obs. Este local muda de acordo com a versão do Postgres, verificar qual o caminho correto no txt da pasta da Conversão VD.</b></a></p></li>
+		<li><p style="color: black"><b>Porta:</b> O número da porta que utilizamos.</b></a></p></li>
+		<li><p style="color: black"><b>Data:</b> O nome do Database.</b></a></p></li>
+		<li><p style="color: black"><b>Pasta Backup:</b> O local que foi descompactado o Backup.</b></a></p></li>
+</ul><p></p>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\RestorePostegre1.jpg" alt "h " align="middle">
+	</center>
+</p> 
+	<p style="color: black">Clique em Run e aguarde restaurar o Database.</b></a></p><p></p>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\RestorePostegre3.jpg" alt "h " align="middle">
+	</center>
+</p> 	    
+	<hr>
+	<ul>
+	 <li><p style="color: red">Antes de começar a conversão vá até a Pasta Phoenix e crie uma pasta Empresas e uma Geral.</b></a></p></li>
+	 <li><p style="color: red">Vá até a pasta Conversao VD que esta na aréa de trabalho e <b>execute o CopiaDDF.bat para copiar as DDFs para a pasta Geral.</b></a></p></li>
+	 <li><p style="color: red">Este arquivo irá apagar todo o conteúdo da pasta Geral e copia as DDFs necessárias para a conversão.</b></a></p></li>
+	 </ul>
+	 	<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\Copiabat.jpg" alt "h " align="middle">
+	</center>
+</p> 
+<p style="color: black">Executando a cópia.</b></a></p><P></P>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\CopiaDDF.jpg" alt "h " align="middle">
+	</center>
+</p>   
+	<p style="color: black">Após restaurar o Database entre na pasta Conversao VD que esta na aréa de trabalho e execute o <b>MigradorVD.</b></a></p><p></p>
+	 <p style="color: black">Nessa tela iremos fazer algumas configurações.</b></a></p><p></p>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\Migrador2.jpg" alt "h " align="middle">
+	</center>
+</p>
+		<p style="color: black">Clicando no botão ao lado de SAGE_OFFICE_SQL Vai perguntar se deseja criar um novo layout Padrão</b></a></p><p></p>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\Layoutpadrao.jpg" alt "h " align="middle">
+	</center>
+</p>    
+	<p style="color: black">Clique em Sim.</b></a></p><p></p>
+	 <p style="color: black">Abrirá a próxima tela.</b></a></p><p></p>
+	  <p style="color: black">Configuramos os campos demarcados em vermelho.</b></a></p><p></p>
+	 <ul>
+	     <li><p style="color: black">Database é o Database criado.</b></a></p></li>
+	 	 <li><p style="color: black">Base de dados destino é o local onde será salvo a conversão.</b></a></p></li>
+	 	 <li><p style="color: black">Arquivos do cliente é onde se encontra o backup.</b></a></p></li>
+	 </ul><p></p>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\Migrador1.jpg" alt "h " align="middle">
+	</center>
+</p>        
+	<p style="color: black">Agora clique em Importar.</b></a></p><p></p>
+	   <p style="color: black">Ao clicar em Importar O sistema dará a mensagem que importou as empresas com sucesso.</b></a></p><p></p>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\ImportCSucess.jpg" alt "h " align="middle">
+	</center>
+</p>    
+    <p style="color: black">O sistema irá importar somente os apelidos das empresas, para importar os cadastros faremos o seguinte:</b></a></p><p></p>			
+     <p style="color: black">Entre na pasta da base do cliente, será criada uma Planilha com o nome de <b>DeParaEmp.xlsx.</b></a></p><p></p>
+      <p style="color: black">E uma Planilha com o nome de <b>DeParaEmpNRel.xlsx.</b></a></p><p></p>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\Dpara01.jpg" alt "h " align="middle">
+	</center>
+</p>			
+	<p style="color: black">Abra a planilha <b>DeParaEmpNRel.xlsx</b><p></p><p></p>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\Dpara02.jpg" alt "h " align="middle">
+	</center>
+</p>    
+	<p style="color: black">Agora abra a planilha <b>DeParaEmp.xlsx.</b></a></p>
+	 <p style="color: black">E copie a primeira coluna da planilha anterior para a primeira e segunda coluna dessa planilha.</b></a></p><p></p>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\Dpara03.jpg" alt "h " align="middle">
+	</center>
+</p> 
+<p style="color: black">Coluna <b>EMPNEW</b></a></p>   
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\Dpara04.jpg" alt "h " align="middle">
+	</center>
+</p>			
+	<p style="color: black">Vai ficar conforme abaixo.</b></a></p><p></p>
+	<p style="color: black">Na coluna <b>EMPNEW</b> podemos modificar o apelido da empresa para outro, ou se deixarmos em branco essa empresa não será convertida.</b></a></p>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\Dpara05.jpg" alt "h " align="middle">
+	</center>
+</p>
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\Dpara06.jpg" alt "h " align="middle">
+	</center>
+</p>	
+	<p style="color: black">Agora volte para o Migrador e selecione os dados a serem convertidos.</b></a></p>	
+<p>
+	<center>
+	    <img src="imagens/FolhamaticPostgres\Migrador3.jpg" alt "h " align="middle">
+	</center>
+</p>
+     <p style="color: black">Em seguida clique em Importar.</b></a></p>	
+     <p style="color: black">Aguarde a importação.</b></a></p>	
+<hr>
+	 <a href="Conversao.html">Voltar</a><a></span></p>
+<P></P>
+<P></P>
+	 <hr>
+</html>
