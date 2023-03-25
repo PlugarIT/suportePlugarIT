@@ -1,0 +1,392 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+
+<head>
+	<meta property="fb:admins" content="591985244" />
+	<meta name="google-site-verification" content="-qensH5_gji_6C91Q4sVjyqkyD-F-BPims6luRmnGos" />
+	<title>Pesquisa Phoenix</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script type="text/javascript" src="./js/funcs.js"></script>
+	<script type="text/javascript" src="./js/mootools-1.2.1-full.js"></script>
+	<script type="text/javascript" src="./js/shCore.js"></script>
+	<script type="text/javascript" src="./js/show_ads.js"></script>
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<script type="text/javascript">
+	//when the dom is ready
+	window.addEvent('domready', function () {
+		var customTipsB = $$('.tips');
+		var toolTipsB = new Tips(customTipsB, {
+			className: 'tip'
+		});
+
+
+	});
+
+	SyntaxHighlighter.config.clipboardSwf = 'http://codigopronto.com.br/includes/js/syntaxhighlighter_2.1.364/scripts/clipboard.swf';
+	SyntaxHighlighter.config.tagName = 'textarea';
+	SyntaxHighlighter.all();	
+</script>
+
+<body>
+	<img src="C:\css\Cabecalho.jpg">
+	<div id="wrapper">
+		<div id="header">
+			<div id="menu_lateral">
+				<div id="rodape">
+					<style>
+						/*Link não visitado */
+						a:link {
+							color: LightSlateGray;
+							text-decoration: none;
+						}
+
+						/*Link já visitado*/
+						a:visited {
+							color: RoyalBlue;
+							text-decoration: none;
+						}
+
+						/*Quando o mouse passa por cima*/
+						a:hover {
+							color: red;
+							text-decoration: none;
+						}
+
+						/*Link ativo/selecionado*/
+						a:active {
+							color: yellow;
+							text-decoration: none;
+						}
+					</style>
+					<div id="aviso">
+						<p></p>
+						<p style="color: Dodgerblue">Como implantar serviços de desktop remoto (RDS) 2019</p>
+					</div>
+					<p></p>
+					<a href="Pesquisa4.0.html">
+						<p style="color: blue">Volta para pagina inicial
+					</a>
+					<ul>
+						<li><a href="Windows.html">Voltar para Windows</a><a></span></p>
+					</ul>
+					<hr>
+					<p></p>
+				</div>
+			</div>
+			<p></p>
+			<a name="Remote App"></a>
+			<p style="color: Dodgerblue">Instalação</span>
+			<p></p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>Instalar os serviços de desktop remoto (RDS) no Windows Server
+					2019 parece complicado, mas na verdade é bem fácil. Nesse
+					artigo, veremos como instalar esses serviços em um ambiente
+					de domínio que requer dois servidores.<o:p></o:p></span></p>
+			<hr>
+			<p style="color: Dodgerblue">Pré-requisitos</span>
+			<p></p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>Há apenas dois passos necessários antes de podermos instalar
+					o RDS. Eles são:<o:p></o:p></span></p>
+			<ul>
+				<li>Todos os servidores estão no domínio</li>
+				<li>Há pelo menos dois servidores disponíveis</li>
+			</ul>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>O motivo de precisarmos de dois servidores é que a função de
+					Licenciamento do RD irá para o segundo servidor, em vez de
+					manter tudo no mesmo servidor. Isso é considerado uma das
+					melhores práticas da Microsoft. Nesse tutorial, usamos o
+					controlador de domínio como o servidor de licença do RD, o
+					que não seria considerado uma das melhores práticas. O motivo
+					disso nesse tutorial é manter a instalação simples.<o:p></o:p></span></p>
+			<hr>
+			<p style="color: Dodgerblue">Instalação das funções básicas dos serviços de desktop remoto</span>
+			<p></p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>Nessa primeira série de instalação, vamos adicionar as
+					seguintes funções ao nosso servidor RDS primário:<o:p></o:p></span></p>
+			<ul>
+				<li>Broker de conexão RD</li>
+				<li>Acesso à web RD</li>
+				<li>Host de sessão RD</li>
+			</ul>
+			<hr>
+			<span style='font-size:10.0pt;color:#548DD4;mso-themecolor:text2;mso-themetint:153'>Etapas de instalação</span>
+			<p></p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>1 - No gerenciador de servidores do servidor RDS primário
+					que estamos instalando,<b> abra o Assistente para Adicionar
+						Funções e Recursos e selecione a instalação dos Serviços
+						de Desktop Remoto.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp1.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>2 - Nesse tutorial, vamos escolher o <b>Início Rápido</b>, mas
+					se você precisa de mais controle sobre o processo de
+					instalação, pode usar a <b>Implantação Padrão</b> para modificar
+					mais opções durante a instalação.<o:p></o:p></span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp2.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>3 - A seguir, escolheremos <b>Implantação em desktop baseada
+						em sessão</b>, pois esse é um modelo de sessão para
+					RemoteApp e desktop normalmente usado em implantações
+					de RDS mais tradicionais.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp3.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>4 - Na <b>Seleção de servidor</b>, escolha o servidor em que
+					estamos instalando o RDS.</b></b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp4.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>5 - Escolha <b>Reiniciar o servidor de destino automaticamente
+						se necessário</b> e clique em <b>Ativar</b> para iniciar a instalação.</b></b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp5.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>6 - Verifique se todas as funções foram instaladas antes
+					de avançar para as próximas etapas.<o:p></o:p></span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp6.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p></p>
+			<p></p>
+			<hr>
+			<p></p>
+			<p></p>
+			<span style='font-size:10.0pt;color:#548DD4;mso-themecolor:text2;mso-themetint:153'>Adicionar servidor secundário</span>
+			<p></p>
+
+			<p></p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>Para esse tutorial, vamos usar o Servidor de Domínio como
+					nosso servidor de <b>Licenciamento de RD</b>. Porém, para instalar
+					facilmente essa função, podemos adicionar outro servidor ao
+					Gerenciador de Servidores.</b>
+					<o:p></o:p>
+				</span></p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>1 - Para adicionar o servidor secundário, clique com o
+					botão direito em <b>Todos os Servidores</b>, escolha <b>Adicionar
+						Servidores</b> e então selecione o servidor no <b>Active Directory.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp7.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp8.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>2 - Navegue até os Serviços de Desktop Remoto e clique no
+					sinal de adição verde para o Licenciamento de RD.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp9.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>3 - A tela <b>Adicionar Servidores de Licenciamento de RD</b>
+					será exibida e permitirá que você adicione o servidor
+					secundário como destino da função de <b>Licenciamento de RD.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp10.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>4 - Clique em <b>Adicionar</b> para instalar a função no servidor secundário.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp11.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>5 - Verifique se a instalação foi concluída, conferindo
+					se o símbolo de adição verde foi substituído pelo item
+					apropriado em <b>Licenciamento de RD.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp12.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<hr>
+			<p style="color: Dodgerblue">Adicionar função de Gateway de RD</span>
+			<p></p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>Por fim, precisamos adicionar a <b>Função de Gateway de RD</b> para
+					o nosso servidor RDS primário.</b>
+					<o:p></o:p>
+				</span></p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>1 - Na tela <b>Serviços de Desktop Remoto</b>, clique no sinal de
+					adição verde sobre <b>Gateway de RD.</b>
+					<o:p></o:p>
+				</span></p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>2 - Selecione o servidor RDS primário a ser usado para a
+					instalação dessa função.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp13.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>3 - Indique o certificado SSL autoassinado com um
+					nome de domínio totalmente qualificado.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp14.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>4 - Clique em <b>Avançar</b> e depois em <b>Adicionar</b> para
+					instalar a função em nosso servidor RDS primário.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp15.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<hr>
+			<p style="color: Dodgerblue">Configurar propriedades de implantação</span>
+			<p></p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>Agora que todas as funções foram instaladas, podemos
+					configurar as propriedades de implantação.</b>
+					<o:p></o:p>
+				</span></p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>1 - Vá até a tela <b>Serviços de Desktop Remoto</b> e, no
+					menu suspenso <b>Tarefas</b>, clique em <b>Editar Propriedades
+						de Implantação.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp16.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>2 - Deixe as configurações padrão na tela <b>Gateway de
+						RD</b> e clique no item de menu <b>Licenciamento de RD.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp17.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>3 - Escolha <b>Por usuário</b> na tela <b>Licenciamento de RD</b>.
+					Você pode escolher qualquer opção, mas para os fins
+					desse tutorial, selecionaremos <b>Por usuário.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp18.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>4 - Observe a URL da tela <b>Acesso à Web RD</b>, pois ela
+					será usada mais tarde para acessar as aplicações
+					implantadas.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp19.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>5 - Para fins de teste, você pode deixar os certificados
+					<b>Não Configurados</b>, e por fim clique em <b>OK</b> para salvar a
+					configuração de implantação.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp20.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>Se quiser configurar um certificado, você terá que
+					fazer isso para cada um dos serviços de função
+					individualmente</b>
+					<o:p></o:p>
+				</span></p>
+			<hr>
+			<p style="color: Dodgerblue">Verificar Serviços de Desktop Remoto</span>
+			<p></p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>Por padrão, uma QuickSessionCollection foi criada após a
+					instalação, contendo a Calculadora, o WordPad e o Paint como
+					RemoteApps. Isso pode ser usado para testar a implantação
+					RDP.</b>
+					<o:p></o:p>
+				</span></p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>1 - Navegue até a URL do IIS originalmente localizada
+					em Acesso à web RD, ou você pode usar
+					https://localhost/rdweb/se estiver localizado no
+					próprio servidor RDP, para testar o IIS.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp21.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>2 - Faça login na sessão de RDS do IIS usando
+					credenciais do domínio.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp22.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>3 - Por fim, inicie uma conexão remota. Pode ser uma
+					definida por você ou um RemoteApp padrão.</b>
+					<o:p></o:p>
+				</span></p>
+			<p>
+				<center>
+					<img src="imagens/RemoteApp23.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p class=MsoNoSpacing><span style='font-size:10.0pt'>São necessárias várias etapas para implantar os
+					Serviços de Desktop Remoto, mas depois é fácil
+					configurá-lo e usá-lo. Os RemoteApps oferecem muita
+					flexibilidade, assim como a capacidade de definir
+					coleções de conexões RDP que podem ser oferecidas
+					aos usuários.</b>
+					<o:p></o:p>
+				</span></p>
+			<hr>
+			<p></p>
+			<a href="Pesquisa4.0.html">
+				<p style="color: blue">Volta para pagina inicial
+			</a>
+			<a href="Windows.html">
+				<p style="color: blue">Volta para pagina Windows
+			</a>
+			<hr>
+
+</HTML>

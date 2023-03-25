@@ -1,0 +1,193 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+
+<head>
+	<meta property="fb:admins" content="591985244" />
+	<meta name="google-site-verification" content="-qensH5_gji_6C91Q4sVjyqkyD-F-BPims6luRmnGos" />
+	<title>Pesquisa Phoenix</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script type="text/javascript" src="./js/funcs.js"></script>
+	<script type="text/javascript" src="./js/mootools-1.2.1-full.js"></script>
+	<script type="text/javascript" src="./js/shCore.js"></script>
+	<script type="text/javascript" src="./js/show_ads.js"></script>
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<script type="text/javascript">
+	//when the dom is ready
+	window.addEvent('domready', function () {
+		var customTipsB = $$('.tips');
+		var toolTipsB = new Tips(customTipsB, {
+			className: 'tip'
+		});
+
+
+	});
+
+	SyntaxHighlighter.config.clipboardSwf = 'http://codigopronto.com.br/includes/js/syntaxhighlighter_2.1.364/scripts/clipboard.swf';
+	SyntaxHighlighter.config.tagName = 'textarea';
+	SyntaxHighlighter.all();	
+</script>
+
+<body>
+	<img src="C:\css\Cabecalho.jpg">
+	<div id="wrapper">
+		<div id="header">
+			<div id="menu_lateral">
+				<div id="rodape">
+					<style>
+						/*Link não visitado */
+						a:link {
+							color: LightSlateGray;
+							text-decoration: none;
+						}
+
+						/*Link já visitado*/
+						a:visited {
+							color: RoyalBlue;
+							text-decoration: none;
+						}
+
+						/*Quando o mouse passa por cima*/
+						a:hover {
+							color: red;
+							text-decoration: none;
+						}
+
+						/*Link ativo/selecionado*/
+						a:active {
+							color: yellow;
+							text-decoration: none;
+						}
+					</style>
+					<div id="aviso">
+						<p></p>
+						<p style="color: Dodgerblue">Conversão Folhamatic - Como Exportar os Dados para o DataBase (Parte 02)</p>
+					</div>
+					<p></p>
+					<a href="Pesquisa4.0.html">
+						<p style="color: blue">Volta para pagina inicial
+					</a>
+					<hr>
+					<p></p>
+				</div>
+			</div>
+			<p></p>
+			<a name="Folhamatic Gestão"></a>
+			<span style='font-size:10.0pt;color:#548DD4;mso-themecolor:text2;mso-themetint:153'>Conversao de dados Folhamatic Gestão
+				<a href="FolhamaticGestao.html" class="wiki-anchor">
+					<o:p></o:p></span></b></p>
+			<a href="FolhamaticGestao.html" class="wiki-anchor"></a>
+			<ul>
+				<li><a href="FolhamaticGestao.html">Parte 01 - Restaurar Base</a></span></li>
+				<li><a href="FolhamaticGestaoParte03.html">Parte 03 - Importar na Folha</a></span></li>
+				<li><a href="Conversao.html">Voltar para Conversão</a></span></li>
+			</ul>
+			<hr>
+			<p style="color: red">Antes de começarmos a segunda etapa temos que fazer alguns ajustes no diretório do Phoenix conforme orientações abaixo:</a></p>
+			<P></P>
+			<ul>
+				<li>
+					<p style="color: black">Entre na pasta Phoenix, depois na pasta Geral e procure pelo arquivo <b>Config.ini</b>
+				</li></a></p>
+				<li>
+					<p style="color: black">Modifique o campo Habilitada para <b>1</b> isso vai habilitar na Folha o campo de importação
+				</li></a></p>
+				<li>
+					<p style="color: black">Agora entre na pasta \\contspfil01\Suporte_Redes\CONVERSAO\Conversao Sage SQL Server\DLL_MigracaoSage e copie as 2 DLLs para dentro da pasta Phoenix
+				</li></a></p>
+				<li>
+					<p style="color: black">Agora entramos na pasta Phoenix e executamos o <b>Exportacao.exe</b></a></p>
+			</ul>
+			<P></P>
+			<p>
+				<center>
+					<img src="imagens/FolhamaticGestao/Exportacao.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p style="color: black">Nesta tela podemos testar a conexão com o SQL</b></a></p>
+			<P></P>
+			<p style="color: black">Agora iremos configurar a tela para gerarmos os Jsons</b></a></p>
+			<P></P>
+			<ul>
+				<li>
+					<p style="color: black"><b>Origem da Exportação:</b> Sempre será Sage</b></a></p>
+					<P></P>
+				<li>
+					<p style="color: black"><b>Produto:</b> Gestão Contabil Sage</b></a></p>
+					<P></P>
+				<li>
+					<p style="color: black"><b>Tipo de Autenticação:</b> SQL Server</b></a></p>
+					<P></P>
+				<li>
+					<p style="color: black"><b>Servidor:</b> .\SQLEXPRESS</b></a></p>
+					<P></P>
+				<li>
+					<p style="color: black"><b>Banco de Dados:</b> Sage_Gestão_Contabil</b></a></p>
+					<P></P>
+				<li>
+					<p style="color: black"><b>Usuário:</b> sa</b></a></p>
+					<P></P>
+				<li>
+					<p style="color: black"><b>Senha:</b> sa</b></a></p>
+					<P></P>
+				<li>
+					<p style="color: black"><b>Path JSON:</b> Já vem configurado></a></p>
+					<P></P>
+			</ul>
+			<p>
+				<center>
+					<img src="imagens/FolhamaticGestao/Exportacao1.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p style="color: black">Teste a conexão com o Banco de Dados</b></a></p>
+			<P></P>
+			<p>
+				<center>
+					<img src="imagens/FolhamaticGestao/Exportacao2.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p style="color: black">Clique em Avançar</b></a></p>
+			<P></P>
+			<p style="color: black">Irá mostrar os dados que serão convertidos do Gestão</b></a></p>
+			<P></P>
+			<p>
+				<center>
+					<img src="imagens/FolhamaticGestao/Exportacao3.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p style="color: black">Clique em Exportar</b></a></p>
+			<P></P>
+			<p></p>
+			<p>
+				<center>
+					<img src="imagens/FolhamaticGestao/Exportacao4.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<p style="color: black">No final do processo será listado os cadastros concluídos com sucesso.</b></a></p>
+			<P></P>
+			<p>
+				<center>
+					<img src="imagens/FolhamaticGestao/Exportacao5.jpg" alt "h " align="middle">
+				</center>
+			</p>
+			<hr>
+			<p style="color: Blue">Em \\contspfil01\Suporte_Redes\CONVERSAO\Conversao Sage SQL Server tem 2 videos explicativos da conversão em SQL e Gestão da Folhamatic.</b></a></p>
+			<P></P>
+			<hr>
+			<li><a href="FolhamaticGestao.html">Parte 01 - Restaurar Base</a></span></p>
+				<P></P>
+			</li>
+			<li><a href="FolhamaticGestaoParte02.html">Parte 02 - Exportar Dados</a></span></p>
+				<P></P>
+			</li>
+			<li><a href="FolhamaticGestaoParte03.html">Parte 03 - Importar na Folha</a></span></p>
+				<p></p>
+			</li>
+			<li><a href="Conversao.html">Voltar para Conversão</a><a></span></p>
+					<P></P>
+					<P></P>
+					<hr>
+			</li>
+			<hr>
+
+</html>

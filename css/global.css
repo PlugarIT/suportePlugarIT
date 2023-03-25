@@ -1,0 +1,718 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+div#aviso {
+  background: #fff6bf;
+  background-position: 15px 50%; /* x-pos y-pos */
+  text-align: left;
+  padding: 5px 20px 5px 45px;
+  border-top: 2px solid #ffd324;
+  border-bottom: 2px solid #ffd324;
+  text-align: center;
+}
+div#aviso p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bannerCadastro {
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background: #e3e7ed url(../img/img01.gif) repeat-x left top; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #787878;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  color: #f93d00;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+p,
+ul,
+ol {
+  margin-top: 0;
+  line-height: 180%;
+}
+
+ul,
+ol {
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted #999999;
+  color: #417fda;
+}
+
+a:hover {
+}
+
+#wrapper {
+  width: 968px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Header */
+
+#header {
+  width: 968px;
+  height: 150px;
+  margin: 0 auto;
+  /* background: url(../img/img02.gif) no-repeat left top; */
+}
+
+/* Logo */
+
+#logo {
+  float: left;
+  width: 968px;
+  width: 468px;
+  height: 60px;
+  color: #616161;
+  margin: 35px 0 0 380px;
+}
+
+#logo h1,
+#logo p {
+  margin: 0;
+  padding: 0;
+}
+
+#logo h1 {
+  float: left;
+  padding: 80px 0 0 80px;
+  letter-spacing: -1px;
+  text-transform: lowercase;
+  font-size: 2.6em;
+}
+
+#logo p {
+  float: left;
+  margin: 0;
+  padding: 90px 10px;
+  font: normal 14px Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+#logo a {
+  border: none;
+  background: none;
+  text-decoration: none;
+  color: #616161;
+}
+
+/* Search */
+
+#search {
+  float: right;
+  width: 230px;
+  padding: 0;
+}
+
+#search form {
+  height: 41px;
+  margin: 0;
+  padding: 70px 0 0 0px;
+}
+
+#search fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#search-text {
+  width: 210px;
+  border: none;
+  text-transform: lowercase;
+  font: bold 1.2em Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+#search-submit {
+  display: none;
+}
+
+/* Menu */
+
+#menu {
+  width: 968px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  list-style: none;
+  line-height: normal;
+}
+
+/* #menu li {
+  float: left;
+  height: 50px;
+  background: url(../img/img03.gif) no-repeat right top;
+} */
+
+#menu a {
+  display: block;
+  margin-top: 10px;
+  margin-right: 3px;
+  padding: 7px 20px 7px 20px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  border: none;
+}
+
+#menu a:hover,
+#menu .current_page_item a {
+}
+
+#menu a:hover {
+  text-decoration: underline;
+}
+
+/* Page */
+
+/* #page {
+  width: 968px;
+  margin: 0 auto;
+  background: url(../img/img05.jpg) repeat-y left top;
+}
+
+#page-bgtop {
+  background: url(../img/img04.jpg) no-repeat left top;
+}
+
+#page-bgbtm {
+  background: url(../img/img06.jpg) no-repeat left bottom;
+} */
+
+/* Content */
+
+#content {
+  float: right;
+  width: 700px;
+  padding: 60px 20px 0 0;
+}
+
+.post {
+  margin-bottom: 8px;
+  /*background: url(images/img09.jpg) repeat-y left top;*/
+  border: 1px solid #eee;
+}
+
+.post-bgtop {
+}
+
+/* .post-bgbtm {
+  background: url(../img/img10.jpg) no-repeat left bottom;
+  background: url(../img/img08.jpg) no-repeat left top;
+} */
+
+.post .title {
+  padding-top: 15px;
+  padding-left: 20px;
+  color: #000000;
+}
+
+.post .title a {
+  color: #000000;
+  border: none;
+}
+
+.post .meta {
+  border-bottom: 1px dashed #b5def4;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.post .entry {
+  padding: 10px 20px 15px 20px;
+  text-align: justify;
+}
+
+/* Sidebar */
+
+#sidebar {
+  float: left;
+  width: 220px;
+  padding: 60px 0 0 20px;
+  color: #787878;
+}
+
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#sidebar li {
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar li ul {
+  padding-bottom: 30px;
+}
+
+#sidebar li li {
+  line-height: 35px;
+  border-bottom: 1px dashed #d2d4c9;
+}
+
+#sidebar li li span {
+  display: block;
+  margin-top: -20px;
+  padding: 0;
+  font-size: 11px;
+  font-style: italic;
+}
+
+#sidebar h2 {
+  height: 32px;
+  padding: 8px 0 0 30px;
+  /* background: url(../img/img11.gif) no-repeat left top; */
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+#sidebar p {
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+#sidebar a {
+  color: #417fda;
+  border: none;
+}
+
+#sidebar a:hover {
+  text-decoration: underline;
+  color: #787878;
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar_wrap {
+  padding: 20px;
+}
+
+#calendar table {
+  width: 100%;
+}
+
+#calendar tbody td {
+  text-align: center;
+}
+
+#calendar #next {
+  text-align: right;
+}
+
+/* Footer */
+
+#footer {
+  height: 50px;
+  margin: 0 auto;
+  padding: 0px 0 15px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #b2b2b2;
+}
+
+#footer p {
+  margin: 0;
+  line-height: normal;
+  font-size: 9px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#footer a {
+  color: #3d444f;
+}
+
+/*
+ * ==================================================================
+ * Meu css
+ * ==================================================================
+*/
+
+div#loginBox {
+  margin: 0 auto;
+  text-align: center;
+}
+
+div#text-left {
+  text-align: left;
+  width: 250px;
+  margin: auto;
+}
+/*
+ * Formularios ======================================================
+*/
+
+form p {
+  margin: 0;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.campoObrigatorio {
+  border: 1px solid red;
+}
+
+textarea,
+input,
+select {
+  border: 1px solid black;
+}
+
+.input400 {
+  width: 400px;
+}
+
+.checkTitle {
+  font-weight: normal;
+  font-style: oblique;
+  padding-right: 5px;
+}
+
+.clear {
+  clear: both;
+}
+
+input#busca {
+  margin: 15px 0 15px 15px;
+  border: 1px solid #eee;
+  width: 200px;
+}
+/*
+ * tabela de codigo ================================================
+* */
+
+.center {
+  text-align: center;
+}
+
+.tableCodigo {
+  width: 100%;
+}
+
+.tableCodigo td {
+  padding: 5px;
+}
+
+.tableCodigo th {
+  color: #fff;
+  background: #303030;
+  font-size: 12px;
+  font-weight: normal;
+  /*background: url(../img/img08.jpg) no-repeat left top;*/
+}
+.link {
+  cursor: pointer;
+}
+
+.strip1 {
+  background: #eee;
+}
+
+/*
+ * Opcoes do codigo ================================================
+*/
+
+div#comentarios,
+div#comentar,
+div#codigoFonte {
+  border: 1px solid #efefef;
+}
+
+div#codigoFonte p,
+.escuro {
+  background: #303030;
+  color: white;
+}
+.comentarioTopo {
+  background: #efefef;
+}
+
+.opcoes ul {
+  list-style: none;
+}
+
+.opcoes li {
+  display: inline;
+}
+
+.opcoes li a {
+  padding: 7px;
+  border: none;
+}
+
+div#codigoFonte {
+}
+
+div#comentar {
+}
+
+div#comentarios {
+}
+
+textarea#fonte {
+  width: 100%;
+  height: 500px;
+}
+/*
+ * ==================================================================
+ * Mootools tips
+ * ==================================================================
+*/
+
+.tip .tip {
+  /* background: url(../img/img03.gif) repeat left top; */
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.tip .tip-title {
+  color: #fff;
+  background-color: #666;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.tip .tip-text {
+  color: #fff;
+  padding: 5px;
+  font-family: serif;
+  font-size: 12px;
+}
+
+/*
+ * ==================================================================
+ * Paginacao
+ * ==================================================================
+*/
+
+div#paginacao {
+  margin-bottom: 70px;
+  padding-top: 10px;
+}
+
+.box-pag-prev {
+  width: 93px;
+  height: 28px;
+  margin-right: 2px;
+  float: left;
+  background-color: #b5def4;
+  border: 1px solid #417fda;
+}
+.pag-prev {
+  width: 74px;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+}
+.pag-prev a {
+  text-transform: uppercase;
+}
+
+.box-number-selected {
+  width: 30px;
+  height: 28px;
+  margin-right: 1px;
+  float: left;
+  background-color: #417fda;
+  border: 1px solid #b5def4;
+}
+
+.pag-number-selected {
+  padding: 7px 10px 10px 12px;
+  height: 28px;
+}
+
+.pag-number-selected a {
+  color: #fff;
+}
+
+.box-number {
+  width: 30px;
+  height: 28px;
+  margin-right: 1px;
+  float: left;
+  background-color: #b5def4;
+  border: 1px solid #417fda;
+}
+
+.pag-number {
+  padding: 7px 10px 10px 12px;
+  height: 28px;
+}
+
+.pag-number a {
+}
+
+.box-pag-next {
+  background-color: #b5def4;
+  border: 1px solid #417fda;
+  width: 93px;
+  height: 28px;
+  float: left;
+}
+
+.pag-next {
+  width: 84px;
+  padding-left: 10px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+}
+
+.pag-next a {
+  text-transform: uppercase;
+}
+
+/*
+ * ==================================================================
+ * Icones
+ * ==================================================================
+*/
+
+.ico_lock {
+  /* background: url("../img/ico_lock.png"); */
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  padding: 3px 0px 3px 20px;
+  margin: 0.4em 0;
+}
+
+.ico_lock_open {
+  /* background: url("../img/ico_lock_open.png"); */
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  padding: 3px 0px 3px 20px;
+  margin: 0.4em 0;
+}
+
+.ico_del {
+  /* background: url("../img/ico_del.png"); */
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  padding: 3px 0px 3px 20px;
+  margin: 0.4em 0;
+}
+
+.ico_alert {
+  /* background: url("../img/ico_alert.png"); */
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  padding: 3px 0px 3px 20px;
+  margin: 0.4em 0;
+}
+
+.ico_edit {
+  /* background: url("../img/ico_edit.png"); */
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  padding: 3px 0px 3px 20px;
+  margin: 0.4em 0;
+}
+
+.ico_search {
+  /* background: url("../img/ico_search.png"); */
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  padding: 3px 0px 3px 20px;
+  margin: 0.4em 0;
+}
+
+.ico_code {
+  /* background: url("../img/ico_code.png"); */
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  padding: 3px 0px 3px 20px;
+  margin: 0.4em 0;
+}
+
+.ico_source {
+  /* background: url("../img/ico_source.png"); */
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  padding: 3px 0px 3px 20px;
+  margin: 0.4em 0;
+}
+
+.ico_comments {
+  /* background: url("../img/ico_comments.png"); */
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  padding: 3px 0px 3px 20px;
+  margin: 0.4em 0;
+}
+
+.ico_comment_add {
+  /* background: url("../img/ico_comment_add.png"); */
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  padding: 3px 0px 3px 20px;
+  margin: 0.4em 0;
+}
+
+.ico_down {
+  /* background: url("../img/ico_down.png"); */
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  padding: 3px 0px 3px 20px;
+  margin: 0.4em 0;
+}
+
+.ico_down_all {
+  /* background: url("../img/ico_down_all.png"); */
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  padding: 3px 0px 3px 20px;
+  margin: 0.4em 0;
+}
+
+.container-centralizado {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
